@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  pull_request_target:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 60;
+  another-test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "all good"
